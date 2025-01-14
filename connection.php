@@ -1,10 +1,15 @@
 <?php
 $servername = "localhost";
-$username="root";
-$password="";
-$dbname="library";
+$username = "root";
+$password = "";
+$dbname = "library";
 
-$conn =new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
-$conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-echo("connected!"); #remember to comment out later!
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    echo "Connected successfully!"; // Remember to comment out later!
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
 ?>
