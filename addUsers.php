@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once("connection.php");
-header("location:user.php");
+header("location:Users.php");
 array_map("htmlspecialchars", $_POST);
 
 print_r($_POST);
