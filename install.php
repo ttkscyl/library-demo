@@ -26,8 +26,8 @@ $stmt = $conn->prepare("
         Authors TEXT NOT NULL,
         Genres TEXT NOT NULL,
         ISBN VARCHAR(13) UNIQUE NOT NULL,
-        CopiesAvailable INT(4) NOT NULL DEFAULT 0,
-        TotalCopies INT(4) NOT NULL DEFAULT 0
+        CopiesAvailable INT(4) DEFAULT 0,
+        TotalCopies INT(4) DEFAULT 0
     )
 ");
 $stmt->execute();
@@ -44,9 +44,8 @@ $stmt = $conn->prepare("
         BorrowDate DATE NOT NULL,
         DueDate DATE NOT NULL,
         ReturnDate DATE DEFAULT NULL,
-        Status ENUM('Borrowed', 'Returned', 'Overdue') DEFAULT 'Borrowed',
-        FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
-        FOREIGN KEY (BookID) REFERENCES Books(BookID) ON DELETE CASCADE
+        Status ENUM('Borrowed', 'Returned', 'Overdue') DEFAULT 'Borrowed'
+        
     )
 ");
 $stmt->execute();
