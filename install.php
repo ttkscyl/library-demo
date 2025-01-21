@@ -25,7 +25,7 @@ $stmt = $conn->prepare("
         Title VARCHAR(255) NOT NULL,
         Authors TEXT NOT NULL,
         Genres TEXT NOT NULL,
-        ISBN VARCHAR(13) UNIQUE NOT NULL,
+        ISBN VARCHAR(13) NOT NULL,
         CopiesAvailable INT(4) DEFAULT 0,
         TotalCopies INT(4) DEFAULT 0
     )
