@@ -1,11 +1,18 @@
 <?php
 session_start();
 include_once("connection.php");
-header("location:Users.php");
+#header("location:Users.php");
 array_map("htmlspecialchars", $_POST);
 
+#below from line 8-12 is to check for array keys
+if (isset($array['Email'])) {
+    echo $array['Email'];
+} else {
+    echo 'Key does not exist';
+}
+
 print_r($_POST);
-echo($_POST["Username"]);
+echo($_POST["UserID"]);
 switch($_POST["role"]){
     case "User":
         $role=0;
