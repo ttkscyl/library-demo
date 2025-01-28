@@ -10,8 +10,8 @@ $stmt = $conn->prepare("
         Name VARCHAR(255) NOT NULL,
         Email VARCHAR(255) UNIQUE NOT NULL,
         Password VARCHAR(255) NOT NULL,
-        CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        role
+        CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        role TINYINT (1)
     )
 ");
 $stmt->execute();
