@@ -11,6 +11,7 @@ $stmt = $conn->prepare("
         Email VARCHAR(255) UNIQUE NOT NULL,
         Password VARCHAR(255) NOT NULL,
         CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        role
     )
 ");
 $stmt->execute();
