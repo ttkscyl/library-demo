@@ -27,7 +27,7 @@ VALUES (null:Name, :Email, :Password, :CreatedAt)");
 $statement->bindParam(":Name", $_POST["Name"]);
 $statement->bindParam(":Email", $_POST["Email"]);
 $statement->bindParam(":Password", $hashedPassword);
-$statement->bindParam(":CreatedAt", date("Y-m-d H:i:s"));
+$statement->bindParam(":CreatedAt", $_POST["CreatedAt"]);
 $statement->bindParam(":role", $role);
 $statement->execute();
 $conn=null;
