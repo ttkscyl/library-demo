@@ -25,6 +25,9 @@
                 {
                     echo($row["Title"].", ".$row["Authors"].",".$row["Genres"].",".$row["ISBN"]."<br>");
                 }
+
+
+            $_POST["submit"]
         ?>
 
     </body>    

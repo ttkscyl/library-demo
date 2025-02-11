@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoly</title>
+    <title>My account | Library</title>
     <link rel="stylesheet" href="style.css">
     
-    <!-- Oxanium font -->
+    <!-- Oxanium font --> <!-- Oxanium font --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="games/index.html">
+          <a class="navbar-brand" href="">
             <img src="pictures/icon.png" alt="company logo" style="width:45px;" class="rounded-pill"> 
-            <span><b>&nbsp;&nbsp; Memoly</b></span>
+            <span><b>&nbsp;&nbsp; Helios's Bookshelf</b></span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,34 +31,23 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="library.html">2</a>
+                <a class="nav-link" href="library.php">View books</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Ebbinghaus.html">3</a>
+                <a class="nav-link" href="copyright.html">Copyright</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about-us.html">4</a>
+                <a class="nav-link" href="account.php">My account</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
   
-    <!-- Main Hero Section -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content container">
-            <h2 class="display-2 display-md-3 display-sm-4">hello.</h2>
-            <p class="fs-3 fs-md-4 fs-sm-5">hello.</p>
-          </div>
-      </section>
-      
-
-        
-
+    
 </body>
 
 </html>
