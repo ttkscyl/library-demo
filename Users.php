@@ -8,10 +8,11 @@
     <body>
 
         <form action="addUsers.php" method="post">
-            Name:<input type = "text" name="Title"><br>
-            Email:<input type = "text" name="Authors"><br>
-            Password:<input type ="text" name ="Genres"><br>
-
+            Name:<input type = "text" name="Name"><br>
+            Email:<input type = "text" name="Email"><br>
+            Password:<input type ="text" name ="Password"><br>
+            <input type="radio" name="role" value="User" checked> User<br>
+            <input type="radio" name="role" value="Admin"> Admin<br>
             <input type="submit" value="Add User">
         </form>
 
