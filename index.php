@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>| Library</title>
+    <title>Home | Library</title>
     <link rel="stylesheet" href="style.css">
     
     <!-- Oxanium font --> <!-- Oxanium font --> 
@@ -51,10 +51,12 @@
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content container">
-            <h2 class="display-2 display-md-3 display-sm-4">hello.</h2>
-            <p class="fs-3 fs-md-4 fs-sm-5">hello.</p>
+            <h2 class="display-2 display-md-3 display-sm-4">图书馆</h2>
+            <p class="fs-3 fs-md-4 fs-sm-5">。</p>
           </div>
       </section>
+
+    <!-- Featured Books -->
         
 
 </body>
