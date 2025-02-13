@@ -34,7 +34,7 @@
                 <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="library.php">View books</a>
+                <a class="nav-link" href="displayall.php">View books</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="copyright.html">Copyright</a>
