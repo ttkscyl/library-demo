@@ -56,8 +56,7 @@
             <button type="button" onclick="window.location.href='books.php'">Click to Borrow Books</button>
           </div>
       </section>
-
-        
+      
 
 </body>
 
