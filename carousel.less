@@ -1,0 +1,30 @@
+@import (less) "../lib/slick.css";
+@import (less) "../lib/slick-theme.css";
+@import (less) "../less/index.less";
+
+.carousel-container {
+  .slick-slider {
+    // allow overflow now the carousel has been initialised.
+    overflow: visible;
+  }
+}
+.carousel {
+  .slick-prev,
+  .slick-next {
+    width: auto;
+    height: auto;
+    z-index: @z-index-level-4;
+    &:before {
+      color: @primary-blue;
+      font-size: 35px;
+    }
+  }
+
+  .slick-prev:before {
+    margin-left: 15px;
+  }
+
+  .slick-next {
+    margin-right: 11px;
+  }
+}
