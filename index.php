@@ -47,14 +47,14 @@
         </div>
       </nav>
   
-    <!-- Main Hero Section -->
-    <!-- <section class="hero">
+
+    <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content container">
             <h2 class="display-2 display-md-3 display-sm-4">A library</h2>
             <p class="fs-3 fs-md-4 fs-sm-5">in progress</p>
           </div>
-      </section> -->
+      </section> 
     
     <section class="main">
       <div class="carousel-section">
