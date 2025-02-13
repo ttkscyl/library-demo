@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My account | Library</title>
+    <title>My Account | Library</title>
     <link rel="stylesheet" href="style.css">
     
     <!-- Oxanium font --> <!-- Oxanium font --> 
@@ -40,14 +40,24 @@
                 <a class="nav-link" href="copyright.html">Copyright</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="account.php">My account</a>
+                <a class="nav-link" href="login.php">My account</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
   
-    
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+            <h2 class="display-2 display-md-3 display-sm-4">Welcome</h2>
+            <p class="fs-3 fs-md-4 fs-sm-5">login successful</p>
+          </div>
+      </section>
+
+        
+
 </body>
 
 </html>

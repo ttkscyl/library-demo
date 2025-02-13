@@ -40,7 +40,7 @@
                 <a class="nav-link" href="copyright.html">Copyright</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="account.php">My account</a>
+                <a class="nav-link" href="login.php">My account</a>
               </li>
             </ul>
           </div>
@@ -51,8 +51,8 @@
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content container">
-            <h2 class="display-2 display-md-3 display-sm-4">图书馆</h2>
-            <p class="fs-3 fs-md-4 fs-sm-5">。</p>
+            <h2 class="display-2 display-md-3 display-sm-4">A library</h2>
+            <p class="fs-3 fs-md-4 fs-sm-5">in progress</p>
           </div>
       </section>
 
