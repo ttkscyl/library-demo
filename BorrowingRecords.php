@@ -11,32 +11,33 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="">
-                <img src="pictures/icon.png" alt="company logo" style="width:45px;" class="rounded-pill"> 
-                <span><b>&nbsp;&nbsp; Helios's Bookshelf</b></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="library.php">View books</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="copyright.html">Copyright</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">My account</a>
-                </li>
-                </ul>
-            </div>
+                <a class="navbar-brand" href="">
+                    <img src="pictures/icon.png" alt="company logo" style="width:45px;" class="rounded-pill"> 
+                    <span><b>&nbsp;&nbsp; Helios's Bookshelf</b></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="library.php">View books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="copyright.html">Copyright</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">My account</a>
+                    </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <section class="BorrowingRecord">
+    <!----------------------------------------------------------------------------------------------------------->
+    <section class="BorrowingRecord">
             <form action="addBorrowingRecords.php" method="POST">
             From User :<select name = "Users">
             <?php
@@ -49,7 +50,7 @@
                         }
             ?>
 
-        </select>
+            </select>
         <br>
         <br>
     <!-- Below is books-->
@@ -57,7 +58,7 @@
             Book to Borrow :<select name="Books">
                 
 
-        <?php
+            <?php
                 
             include_once("connection.php");
             $statement=$conn->prepare("SELECT * FROM Books ORDER BY Title ASC");
@@ -67,7 +68,7 @@
                         echo("<option value = ".$row["BookID"]."> ".$row["Title"]."</option>");
                     }
         ?>
-        </select>
+            </select>
         <br>
         <br>
         <div class = "datepicker-container">
@@ -125,9 +126,7 @@
         </div>
 
         <input type = "submit" value ="Add the borrowing records">
-            </section>
-        
-
+        </section>
     </body>
     
 </html>
