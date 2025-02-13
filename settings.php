@@ -53,6 +53,7 @@
         <div class="hero-content container">
             <h2 class="display-2 display-md-3 display-sm-4">Welcome</h2>
             <p class="fs-3 fs-md-4 fs-sm-5">login successful</p>
+            <button type="button" onclick="window.location.href='books.php'">Click to Borrow Books</button>
           </div>
       </section>
 
