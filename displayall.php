@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account | Library</title>
+    <title>View Books | Library</title>
     <link rel="stylesheet" href="style.css">
     
     <!-- Oxanium font --> <!-- Oxanium font --> 
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="displayall.php">View books</a>
+                <a class="nav-link" href="library.php">View books</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="copyright.html">Copyright</a>
@@ -47,19 +47,76 @@
         </div>
       </nav>
   
-    <!-- Main Hero Section -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content container">
-            <h2 class="display-2 display-md-3 display-sm-4">Welcome Admin</h2>
-            <p class="fs-3 fs-md-4 fs-sm-5">login successful</p>
-            <button type="button" onclick="window.location.href='books.php'">Click to Return Books</button>
-            <button type="button" onclick="window.location.href='BorrowingRecords.php'">Click to Borrow Books</button>
-            <button type="button" onclick="window.location.href='displayall.php'">View logs</button>
-          </div>
-      </section>
-      
+<br>
 
 </body>
 
+</html>
+
+
+
+
+
+
+<?php
+require 'connection.php'; 
+
+try {
+    $stmt = $conn->prepare("SELECT * FROM Books"); 
+    $stmt->execute();
+    $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("Error: " . $e->getMessage());
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>All Books</h2>
+
+<table>
+    <tr>
+        <th>BookID</th>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Genres</th>
+        <th>ISBN</th>
+        <th>Copies Available</th>
+        <th>Total Copies</th>
+    </tr>
+    <?php foreach ($books as $book): ?>
+        <tr>
+            <td><?= htmlspecialchars($book['BookID']) ?></td>
+            <td><?= htmlspecialchars($book['Title']) ?></td>
+            <td><?= htmlspecialchars($book['Authors']) ?></td>
+            <td><?= htmlspecialchars($book['Genres']) ?></td>
+            <td><?= htmlspecialchars($book['ISBN']) ?></td>
+            <td><?= htmlspecialchars($book['CopiesAvailable']) ?></td>
+            <td><?= htmlspecialchars($book['TotalCopies']) ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+</body>
 </html>
