@@ -58,8 +58,7 @@
             <button type="button" onclick="window.location.href='displayall.php'">View logs</button>
           </div>
       </section>
-
-        
+      
 
 </body>
 

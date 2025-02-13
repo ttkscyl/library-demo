@@ -60,6 +60,9 @@ body {
     color: #007bff !important;
 }
 
+.carousel__item{
+    margin:0;
+}
 /* Button */
 .button {
     background-color: #04AA6D; 
@@ -71,3 +74,40 @@ body {
     display: inline-block;
     font-size: 16px;
   }
+
+  /*Borrow Records*/
+  .date-input{
+    padding:10px;
+    font-size:1rem;
+    border-radius:5px;
+    border:1px solid #eee;
+}
+
+.datepicker-container{
+    position:relative;
+
+}
+
+.datepicker{
+    position:absolute;
+    top: 100%;
+    z-index:100;
+    margin-top:2px;
+    background:#fff;
+    padding:10px;
+    border-radius:5px;
+
+}
+
+.datepicker button{
+    cursor:pointer;
+    border:none;
+    border-radius:3px;
+    background: transparent;
+    font-size:14px;
+    font-weight: 500;
+    text-transform:uppercase;
+    transition:0.3s;
+
+
+}
