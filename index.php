@@ -21,7 +21,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="https://chat.deepseek.com/">
             <img src="pictures/icon.png" alt="company logo" style="width:45px;" class="rounded-pill"> 
             <span><b>&nbsp;&nbsp; Helios's Bookshelf</b></span>
           </a>
