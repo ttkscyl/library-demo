@@ -7,7 +7,7 @@ body {
   
 /* Main Section */
 .hero {
-    background-image: url('pictures/dream.webp');
+    background-image: url('pictures/bookshelf.jpg');
     background-position: center;
     background-size: cover; 
     height: 100vh;
@@ -59,3 +59,15 @@ body {
 .navbar .nav-link:hover {
     color: #007bff !important;
 }
+
+/* Button */
+.button {
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
